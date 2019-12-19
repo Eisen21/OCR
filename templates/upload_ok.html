@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联动优势_增值税发票识别</title>
+</head>
+<body>
+    <h2>显示上传图片：</h2>
+    <form action="{{ url_for('detect', img_name=img_name) }}" method="post">
+        <img name="img_upload" src="{{ url_for('.static', filename='image_upload/'+img_name)}}" />
+        <br>
+        <input type="submit" value="检测" class="button-new" style="margin-top:15px;"/>
+    </form>
+</body>
+</html>
