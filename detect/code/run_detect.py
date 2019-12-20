@@ -16,27 +16,18 @@ max_side_len = 1024
 
 def crop_target(box, image):
     # 上下左右都多出三个像素较好
-    bndbox_left = min([box[0, 0], box[3, 0]])
-    bndbox_top = min(box[0, 1], box[1, 1])
-    bndbox_right = max(box[1, 0], box[2, 0])
-    bndbox_bottom = max(box[3, 1], box[2, 1])
+    bndbox_left = min([box[0, 0], box[3, 0]]) - 3
+    bndbox_top = min(box[0, 1], box[1, 1]) - 3
+    bndbox_right = max(box[1, 0], box[2, 0]) + 3
+    bndbox_bottom = max(box[3, 1], box[2, 1]) + 3
     target = image[bndbox_top:bndbox_bottom, bndbox_left:bndbox_right,:]
     height, width, channels = target.shape
-    pts1 = np.float32([box[0], box[1], box[2], box[3]])
-    # pts2 = np.float32([[bndbox_left, bndbox_top], [bndbox_right, bndbox_top], [bndbox_right, bndbox_bottom],
-    #                    [bndbox_left, bndbox_bottom]])
-    pts2 = np.float32(
-        [[0, 0], [bndbox_right - bndbox_left, 0], [bndbox_right - bndbox_left, bndbox_bottom - bndbox_top],
-         [0, bndbox_bottom - bndbox_top]])
-    M = cv2.getPerspectiveTransform(pts1, pts2)
-    target_perspective = cv2.warpPerspective(image, M,(bndbox_right-bndbox_left, bndbox_bottom-bndbox_top))
-    target_perspective = target_perspective.astype(np.uint8)
 
     new_height = 32
     new_width = int(new_height * width / height)
-    target_resized = cv2.resize(target_perspective, (new_width, new_height))
+    target_resize = cv2.resize(target, (new_width, new_height))
 
-    return target_resized
+    return target_resize
 
 
 def resize_image(im, max_side_len=512,square=False):
@@ -263,7 +254,7 @@ def run_detect(image_path, pb_path):
 
         input_tensor_name = 'input_images:0'
         f_tensor_name = 'feature_fusion/Conv_7/Sigmoid:0'
-        g_tensor_name = 'feature_fusion/concat_3:0'
+        g_tensor_name = 'feature_fusion/concat_6:0'
         input_images = sess.graph.get_tensor_by_name(input_tensor_name)
         f_score = sess.graph.get_tensor_by_name(f_tensor_name)
         f_geometry = sess.graph.get_tensor_by_name(g_tensor_name)
@@ -330,8 +321,8 @@ def run_detect(image_path, pb_path):
         return "{}.{}".format(image_name, "jpg")
 
 
-if __name__ == '__main__':
-    # 修改相对路径
-    pb_path = "D:/liandongyoushi/Project/Coding/OCR/detect/model/ResNet_00blue_augyr.pb"
-    image_path = "D:/liandongyoushi/Project/Coding/OCR/static/image_upload/02_original.jpg"
-    run_detect(image_path, pb_path)
+# if __name__ == '__main__':
+#     # 修改相对路径
+#     pb_path = "D:/liandongyoushi/Project/Coding/OCR/detect/model/ResNet_00blue_augyr.pb"
+#     image_path = "D:/liandongyoushi/Project/Coding/OCR/static/image_upload/02_original.jpg"
+#     run_detect(image_path, pb_path)

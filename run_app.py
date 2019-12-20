@@ -55,7 +55,7 @@ def detect(img_name):
         img_path = os.path.join(base_path, 'static/image_upload', img_name)
         print(img_path)
         # 模型路径
-        model_path = "D:/liandongyoushi/Project/Coding/OCR/detect/model/ResNet_00blue_augyr.pb"
+        model_path = "D:/liandongyoushi/Project/Coding/OCR/detect/model/MobileNet_1219.pb"
         # 加载模型进行预测,并返回预测结果(1、分割的32图片;2、带box的图片)
         re_img_name = run_detect(img_path, model_path)
         print(re_img_name)
@@ -70,11 +70,11 @@ def recognize(img_name):
         img_name_ = img_name.split('.')[0] + '/'
         base_path = os.path.dirname(__file__)
         img_path = os.path.join(base_path, 'static/image_segment', img_name_)
-        # img_path = 'D:/liandongyoushi/Project/Coding/OCR/static/image_segment/02_original_detect/'
-        re_recognize = processFunction(img_path)
+        model_path = 'D:/liandongyoushi/Project/Coding/OCR/recognize/model/weights_densenet.h5'
+        re_recognize = processFunction(img_path, model_path)
         print(re_recognize)
-    #     return render_template('recognize.html')
-    # return render_template('detect.html', img_name=img_name)
+        return render_template('recognize.html', img_name=img_name, **re_recognize)
+    return render_template('detect.html', img_name=img_name)
 
 
 if __name__ == '__main__':

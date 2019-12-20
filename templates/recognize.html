@@ -5,11 +5,22 @@
     <title>联动优势_增值税发票识别</title>
 </head>
 <body>
-<h2>显示检测结果：</h2>
+<h2>显示识别结果：</h2>
 <form action="" enctype="multipart/form-data" method="post">
     <img name="img_upload" src="{{ url_for('.static', filename='image_upload/'+img_name)}}" />
-    <br>
-    <input type="submit" value="识别" class="button-new" style="margin-top:15px;"/>
+    <p>发票名称：{{tittle}}</p>
+    <p>购买方名称：{{company_buy}}</p>
+    <p>购买方纳税人识别号：{{id_buy}}</p>
+    <p>购买方地址电话：{{addr_tel_buy}}</p>
+    <p>购买方开户行及账号：{{bank_acco_buy}}</p>
+    <p>货物或应税劳务、服务名称：{{goods_1}}、{{goods_2}}、{{goods_3}}、{{goods_4}}、{{goods_5}}、{{goods_6}}</p>
+    <p>税率：{{tax_rate}}</p>
+    <p>价税合计(大写)：{{ancient_amount}}</p>
+    <p>价税合计(小写)：{{last_amount}}</p>
+    <p>销售方名称：{{company_sell}}</p>
+    <p>销售方纳税人识别号：{{id_sell}}</p>
+    <p>销售方地址电话：{{addr_tel_sell}}</p>
+    <p>销售方开户行及账号：{{bank_acco_sell}}</p>
 </form>
 </body>
 </html>

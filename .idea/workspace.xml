@@ -1,82 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6efed6ad-fdec-4351-80ef-82b1476bc188" name="Default" comment="201912191738 提交">
-      <change afterPath="$PROJECT_DIR$/.idea/OCR.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/data_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/eval.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/icdar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/.ycm_extra_conf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/adaptor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/adaptor.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/adaptor.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/adaptor.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/adaptor.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/clipper.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/clipper/clipper.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/clipper/clipper.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/attr.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/buffer_info.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/cast.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/chrono.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/class_support.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/common.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/complex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/descr.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/eigen.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/embed.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/eval.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/functional.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/numpy.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/operators.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/options.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/pybind11.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/pytypes.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/stl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/stl_bind.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/include/pybind11/typeid.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/lanms/lanms.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/code/run_detect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detect/model/ResNet_00blue_augyr.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recognize/code/keys_5990.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recognize/code/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recognize/code/ocr_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recognize/code/run_recognize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recognize/model/weights_densenet.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/addr_tel_buy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/addr_tel_sell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/ancient_amount.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/bank_acco_buy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/bank_acco_sell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/company_buy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/company_sell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/goods_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/goods_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/goods_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/goods_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/goods_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/goods_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/id_buy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/id_sell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/last_amount.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_segment/02_original_detect/tittle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_upload/02_original.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_upload/02_original.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image_upload/02_original_detect.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/detect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/recognize.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/upload_ok.html" afterDir="false" />
+    <list default="true" id="6efed6ad-fdec-4351-80ef-82b1476bc188" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detect/code/run_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect/code/run_detect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognize/code/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognize/code/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognize/code/run_recognize.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognize/code/run_recognize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recognize.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recognize.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,8 +21,8 @@
       <file leaf-file-name="run_app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="284">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -99,77 +30,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_recognize.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/recognize/code/run_recognize.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="33" />
-              <folding>
-                <element signature="e#43#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="02_original.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/image_upload/02_original.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recognize/code/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#23#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detect.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/detect.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recognize.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/recognize.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload_ok.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/upload_ok.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_detect.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run_detect.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/detect/code/run_detect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="27">
+              <caret line="256" column="51" selection-start-line="256" selection-start-column="51" selection-end-line="256" selection-end-column="51" />
               <folding>
                 <element signature="e#9#18#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/upload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -179,12 +52,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="heqi" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -193,15 +71,16 @@
         <option value="$PROJECT_DIR$/templates/upload.html" />
         <option value="$PROJECT_DIR$/templates/upload_ok.html" />
         <option value="$PROJECT_DIR$/templates/detect.html" />
-        <option value="$PROJECT_DIR$/templates/recognize.html" />
+        <option value="$PROJECT_DIR$/test_recognize.py" />
         <option value="$PROJECT_DIR$/recognize/code/models.py" />
-        <option value="$PROJECT_DIR$/detect/code/run_detect.py" />
-        <option value="$PROJECT_DIR$/recognize/code/run_recognize.py" />
         <option value="$PROJECT_DIR$/run_app.py" />
+        <option value="$PROJECT_DIR$/recognize/code/run_recognize.py" />
+        <option value="$PROJECT_DIR$/templates/recognize.html" />
+        <option value="$PROJECT_DIR$/detect/code/run_detect.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="55" />
     <option name="y" value="22" />
     <option name="width" value="1075" />
@@ -229,6 +108,18 @@
             <path>
               <item name="OCR" type="b2602c69:ProjectViewProjectNode" />
               <item name="OCR" type="462c0819:PsiDirectoryNode" />
+              <item name="detect" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OCR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OCR" type="462c0819:PsiDirectoryNode" />
+              <item name="detect" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OCR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OCR" type="462c0819:PsiDirectoryNode" />
               <item name="recognize" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,12 +138,6 @@
               <item name="OCR" type="b2602c69:ProjectViewProjectNode" />
               <item name="OCR" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OCR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OCR" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="image_segment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OCR" type="b2602c69:ProjectViewProjectNode" />
@@ -345,15 +230,31 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="py.test in test_recognize.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="OCR" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_recognize.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list>
       <item itemvalue="Python.run_app" />
       <item itemvalue="Python.run_detect" />
       <item itemvalue="Python.run_recognize" />
+      <item itemvalue="Python tests.py.test in test_recognize.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run_app" />
         <item itemvalue="Python.run_recognize" />
+        <item itemvalue="Python tests.py.test in test_recognize.py" />
         <item itemvalue="Python.run_detect" />
       </list>
     </recent_temporary>
@@ -369,16 +270,33 @@
       <option name="presentableId" value="Default" />
       <updated>1576744614726</updated>
     </task>
+    <task id="LOCAL-00001" summary="201912191738 提交">
+      <created>1576748402720</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576748402720</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="py_test_in_test_recognize_py - 2019.12.19 at 17h 45m 55s.xml">
+      <configuration name="py.test in test_recognize.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_recognize_py - 2019.12.19 at 17h 46m 13s.xml">
+      <configuration name="py.test in test_recognize.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15858799" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15858799" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.70144284" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44555557" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32963374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -391,8 +309,33 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -532,20 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/detect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/enviroment/Anaconda3-5.2.0/Lib/site-packages/flask/templating.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -563,16 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detect/code/run_detect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#9#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/enviroment/Anaconda3-5.2.0/Lib/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5992">
@@ -582,39 +501,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_recognize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/recognize/code/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="212">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/recognize.html">
+    <entry file="file://$PROJECT_DIR$/templates/detect.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognize/code/run_recognize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+          <folding>
+            <element signature="e#43#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/upload.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_app.py">
+    <entry file="file://$PROJECT_DIR$/static/image_upload/02_original.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/image_segment/02_original_detect/.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/recognize.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/image_upload/02_original_detect.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recognize/code/run_recognize.py">
+    <entry file="file://$PROJECT_DIR$/static/image_upload/02_original.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detect/code/run_detect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="33" />
+        <state relative-caret-position="27">
+          <caret line="256" column="51" selection-start-line="256" selection-start-column="51" selection-end-line="256" selection-end-column="51" />
           <folding>
-            <element signature="e#43#52#0" expanded="true" />
+            <element signature="e#9#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

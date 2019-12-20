@@ -5,7 +5,7 @@ from PIL import Image
 import recognize.code.models as model
 
 
-def recoLineImage(image_path):
+def recoLineImage(image_path, basemodel):
     img_src = Image.open(image_path)
     # 调整比例
     # img_w = img_src.size[0]
@@ -28,23 +28,25 @@ def recoLineImage(image_path):
     # img_gray.show()
 
     img = img_src.convert("L")
-    predict_text = model.predict(img)
+    predict_text = model.predict(img, basemodel)
 
     return predict_text
 
 
-def processFunction(line_image_dir):
+def processFunction(line_image_dir, model_path):
+    from keras.models import load_model
+    basemodel = load_model(model_path, compile=False)
     images_list = os.listdir(line_image_dir)
     print(images_list)
     results = {}
     for image in images_list:
         image_path = line_image_dir + image
-        reco_text = recoLineImage(image_path)
+        reco_text = recoLineImage(image_path, basemodel)
         results[image.split('.')[0]] = reco_text
     return results
 
 
-if __name__ == "__main__":
-    line_image_dir = 'D:/liandongyoushi/Project/Coding/OCR/static/image_segment/02_original_detect/'
-    results_list = processFunction(line_image_dir)
-    print(results_list)
+# if __name__ == "__main__":
+#     line_image_dir = 'D:/liandongyoushi/Project/Coding/OCR/static/image_segment/02_original_detect/'
+#     results_list = processFunction(line_image_dir)
+#     print(results_list)

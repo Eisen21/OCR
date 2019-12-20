@@ -3,19 +3,12 @@ import os
 import numpy as np
 from PIL import Image
 import recognize.code.keys_5990 as keys
-from keras.models import load_model
-
-characters = keys.alphabet[:]
-characters = characters[1:] + u'卍'
-nclass = len(characters)
-# 180000新数据中的最优模型1129
-modelPath = r'D:\UMPAY\Project\Coding\ocr_project\recognize\model\weights_densenet.h5'
-if os.path.exists(modelPath):
-    basemodel = load_model(modelPath, compile=False)
-    print("loda model")
 
 
 def decode(pred):
+    characters = keys.alphabet[:]
+    characters = characters[1:] + u'卍'
+    nclass = len(characters)
     char_list = []
     pred_text = pred.argmax(axis=2)[0]
     for i in range(len(pred_text)):
@@ -24,14 +17,13 @@ def decode(pred):
     return u''.join(char_list)
 
 
-def predict(img):
+def predict(img, basemodel):
     width, height = img.size[0], img.size[1]
     scale = height * 1.0 / 32
     width = int(width / scale)
 
     img = img.resize([width, 32], Image.ANTIALIAS)
 
-   
     '''
     img_array = np.array(img.convert('1'))
     boundary_array = np.concatenate((img_array[0, :], img_array[:, width - 1], img_array[31, :], img_array[:, 0]), axis=0)
@@ -39,9 +31,9 @@ def predict(img):
         img = ImageOps.invert(img)
     '''
     img = np.array(img).astype(np.float32) / 255.0 - 0.5
-    
+
     X = img.reshape([1, 32, width, 1])
-    
+
     y_pred = basemodel.predict(X)
     y_pred = y_pred[:, :, :]
 
