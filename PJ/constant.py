@@ -1,0 +1,1 @@
+PROJECT_PATH = r"D:\PythonProject\PJ"
