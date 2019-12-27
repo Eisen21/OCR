@@ -10,11 +10,14 @@ from PJ import constant
 
 def run(image_path):
 
-    rp_detector = ReferPointDetector(pb_path = "D:\Picture\RP\model\MobileNet_1224\MobileNet_1224.pb")
+    rp_detector_pb_path = os.path.join(constant.PROJECT_PATH, "detect/model", "MobileNet_rp.pb")
+    rp_detector = ReferPointDetector(pb_path = rp_detector_pb_path)
     print("load rp_dector")
-    recognizer = Recognizer(r"D:\PythonProject\PJ\recognize\model\weights_densenet.h5")
+    tecognizer_pb_path = os.path.join(constant.PROJECT_PATH, "recognize/model", "weights_densenet.h5")
+    recognizer = Recognizer(tecognizer_pb_path)
     print("load recognizer")
-    position_adjuster = PositionAdjuster(r"D:\PythonProject\PJ\preprocess\mask\template_mask.txt", rp_detector, recognizer)
+    rp_mask_txt = os.path.join(constant.PROJECT_PATH, "preprocess/mask", "template_mask.txt")
+    position_adjuster = PositionAdjuster(rp_mask_txt, rp_detector, recognizer)
     print("init RP")
 
     _, image_name = os.path.split(image_path)
@@ -25,7 +28,8 @@ def run(image_path):
     image = cv2.imread(image_path)
     detect_out_path = os.path.join(constant.PROJECT_PATH, "temp", "detect")
     txt_path = os.path.join(constant.PROJECT_PATH, "detect/mask", "03.txt")
-    context_detector = ContextDetector(pb_path = "D:\PythonProject\PJ\detect\model\MobileNet_1219.pb", txt=txt_path)
+    context_detector_pb_path = os.path.join(constant.PROJECT_PATH, "detect\model", "MobileNet_1219.pb")
+    context_detector = ContextDetector(pb_path = context_detector_pb_path, txt=txt_path)
     context_detector.run(image, True, detect_out_path)
     image_file_list = glob.glob(detect_out_path + "/*.*")
     dict = {}
@@ -37,7 +41,7 @@ def run(image_path):
     return dict
 
 if __name__ == '__main__':
-    image_path = r"C:\Users\Eisen\Desktop\baidu\baidu5.png"
+    image_path = os.path.join(constant.PROJECT_PATH, "pic\\baidu5.png")
     result = run(image_path)
     for k in result.keys():
         print(k + ":" + result.get(k))
